@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:language_learning_app/models/family_member.dart';
+import 'package:language_learning_app/models/color.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-class FamilyMembersContainer extends StatelessWidget {
-  const FamilyMembersContainer({super.key, required this.member});
-  final FamilyMember member;
+class ColorContainer extends StatelessWidget {
+  const ColorContainer({super.key, required this.color});
+  final ColorItem color;
 
   @override
   Widget build(BuildContext context) {
     return Container(
             height: 120,
-            color: Color(0xff558B37),
+            color: Color(0xff79359F),
             child: Column(
               children: [
                 Row(
@@ -20,7 +20,7 @@ class FamilyMembersContainer extends StatelessWidget {
                       width: 100,
                       height: 120,
                       color: Color(0xfffff6dc),
-                      child: Image.asset(member.image),
+                      child: Image.asset(color.image),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 10),
@@ -29,14 +29,14 @@ class FamilyMembersContainer extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            member.jpName,
+                            color.jpName,
                             style: TextStyle(
                               fontSize: 25,
                               color: Colors.white
                             ),
                           ),
                           Text(
-                            member.enName,
+                            color.enName,
                             style: TextStyle(
                               fontSize: 25,
                               color: Colors.white
@@ -50,7 +50,7 @@ class FamilyMembersContainer extends StatelessWidget {
                       padding: EdgeInsets.only(right: 25),
                       onPressed: (){
                         final player = AudioPlayer();
-                        player.play(AssetSource(member.soundSource));
+                        player.play(AssetSource(color.soundSource));
                       },
                       icon: Icon(
                         Icons.play_arrow,
@@ -63,7 +63,7 @@ class FamilyMembersContainer extends StatelessWidget {
                 Divider(
                   height: 0,
                   thickness: 2.3,
-                  color: Color(0xFF306B1E ),
+                  color: Color(0xD1B5A9A4),
                 ),
               ],
             ),
