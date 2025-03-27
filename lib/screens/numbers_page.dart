@@ -4,7 +4,7 @@ import 'package:language_learning_app/models/number.dart';
 
 class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
-  final List <Number> numbers = const [
+  final List <Number> numbersList = const [
     Number (
       image: 'assets/images/numbers/number_one.png',
       jpName: 'ichi',
@@ -86,9 +86,9 @@ class NumbersPage extends StatelessWidget {
         ),
       ),
       body: ListView.builder(
-              itemCount: numbers.length,
+              itemCount: numbersList.length,
               itemBuilder: (context, index) {
-                return NumberContainer(number: numbers[index]);
+                return NumberContainer(number: numbersList[index]);
               }
             ),
     );

@@ -62,7 +62,7 @@ class ColorContainer extends StatelessWidget {
                 ),
                 Divider(
                   height: 0,
-                  thickness: 2.3,
+                  thickness: 4,
                   color: Color(0xD1B5A9A4),
                 ),
               ],
