@@ -35,6 +35,7 @@ class PhraseContainer extends StatelessWidget {
                           fontSize: 20,
                           color: Colors.white
                         ),
+                        softWrap: true,
                       )
                     ],
                   ),
